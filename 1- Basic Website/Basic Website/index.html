@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnci Design | Ana Sayfa</title>
+    <link rel="stylesheet" href="cssfile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="bc-white">
+        <div class="mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div><a href="index.html" class="font2 tdl-n tc-2">İnci Design</a> </div>
+                <div class="bc-white item-center flex fs-20 font1">
+                    <a class="ml-3 px-1 py-1 tdl-n tc-black" href="index.html">Ana Sayfa</a>
+                    <a class="ml-3 px-1 py-1 tdl-n tc-black" href="urunlerimiz.html">Ürünlerimiz</a>
+                    <a class="ml-3 px-1 py-1 tdl-n tc-black" href="hakkimizda.html">Hakkımızda</a>
+                    <a class="ml-3 px-1 py-1 tdl-n tc-black" href="İletisim.html">İletişim</a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/inci_design__/" target="_blank"><img src="instalogo.jpg" alt="insta logo" height="50px"></a>
+                    <a href="tel:+905398708964"><img src="tel.jpg" alt="tel logo" height="55px"></a>
+                    <a href="mailto:eneskurt95@hotmail.com"><img src="mail.jpg" alt="mail logo" height="50px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+<hr>
+<section>
+   <div class="flex items-center justify-center px-4 py-4">
+    <div class="mx-auto px-5">
+        <h1 class="font1 tc-black" style="font-size: 50px; padding-left: 10rem; color:#0EB58F ;" > Yeni Ürünlerimiz </h1>
+    </div>
+    <!--image slider start-->
+    <div style="width: 500; padding-right: 30rem; padding-top: 2rem; padding-bottom: 5rem;" >
+     <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="4.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+     </div>
+    </div>
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+
+    <!-- <div align="center"><img src="anagorsel.jpg" alt="ana görsel"  width="1000"></div> -->
+    <div class="mx-auto px-5">
+        <h1 class="font1 tc-black" style="font-size: 50px; color: #6EB80A  ;" align="center"> Nasıl Çalışıyoruz ?</h1>
+    </div>
+    <div class="flex items-center justify-center px-4 py-4"> 
+        <div class="box font3" align="center">
+            <h2>Kişiye Özel Sipariş</h2>
+            <img class="img-radius" src="siparis.jpg" alt="siparis" width="150px" >
+            <p>Ürünlerimiz ve instagram kanalımızdaki görsellerden beğendiğiniz ürünleri siparişi verebilirsiniz. Ürünlerde istediğiniz değişiklikler yapılmaktadır. Farklı sipariş vermek isteyen müşterilerimiz istekleri doğrultusunda siparişleri alınır ve öneriler sunularak müşterinin talep ettiği nihai ürün belirlenir. Daha fazla bilgi için whatsapp, telefon yada mail ile bize ulaşabilirisniz. İletişim bilgilerimiz için <a href="İletisim.html" class="tdl-n">buraya</a> tıklayınız. </p>
+        </div>
+        <div class="box font3" align="center">
+            <h2>Fiyatlandırma ve Ödeme</h2>
+            <img class="img-radius" src="odeme.jpg" alt="odeme" width="100px" >
+            <p>Fiyatlarımız özel siparişler veya seçitiğiniz ürünlerimizin kumaş ve maaliyetlerine göre değişmektedir. Ürünlerimizdeki istediğiniz değişliklere göre (boyut, renk, kumaş vb.) fiyatlarımız değişmektedir. </p>
+        </div>
+        <div class="box font3" align="center">
+            <h2>Kargo Hizmeti</h2>
+            <img class="img-radius" src="kargo.jpg" alt="kargo" width="100px" >
+            <p>Kargo ücreti müşteriye aittir. Ürünlerimizin göderileceği kargo şirketi müşteri tarafından seçilebilir. </p>
+        </div>
+    </div>
+
+</section>
+<hr>
+<footer>
+
+</footer>
+    
+   
+</body>
+</html>
