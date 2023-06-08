@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Middle Earth</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="index-images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="feedback.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 fixed-top">
+        <!-- Logo & Name -->
+        <a class="navbar-brand" href="index.html">
+            <img src="index-images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Middle Earth
+        </a>
+        <!-- Responsive Nav Menu Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-between px-3" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class=" nav-item ">
+                    <a class="nav-link active transform-nav" aria-current="page" href="index.html">Home</a>
+                </li>
+                <!-- Characters -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="characters.html">Characters</a>
+                </li>
+                <!-- Regions -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="regions.html">Regions</a>
+                </li>
+                <!-- Maps -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="maps.html">Maps</a>
+                </li>
+                <!-- Books -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="contents.html#books">Books</a>
+                </li>
+                <!-- Movies -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="contents.html#movies">Movies</a>
+                </li>
+                <!-- Games -->
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="contents.html#games">Games</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav pr-4">
+                <li class="nav-item">
+                    <a class="nav-link active transform-nav" aria-current="page" href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning " type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div class="d-flex justify-content-between" style="margin-left: 5%; margin-right: 5%;  margin-top: 10%;  margin-bottom: 5%; width: 90%;">
+            <div style="width: 45%;">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-sm-6 my-3">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+                <div class="mb-3 my-3">
+                    <label for="formFile" class="form-label">File</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="input-group mt-4" >
+                    <span class="input-group-text px-5">Text</span>
+                    <textarea class="form-control" aria-label="With textarea" style="height: 300px;" id="fbText"></textarea>
+                </div>
+                <div class="text-center pe-5 fw-bold pt-5">
+                    <button class="btn btn-warning" onclick="submit()">Submit</button>
+                  </div>
+            </div>     
+            <div class="bg-dark border border-5 border-warning rounded-3  text-white px-3" style="width: 45%; text-align: justify; overflow: auto; height: 750px;" id="feedbacks">
+                <div class="text-center pt-3">
+                    <h2>Feedbacks</h2>
+                </div>
+                <div class="my-3">
+                    <h4>Enes Kurt</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus culpa eius, ipsam vel expedita, minima impedit, esse iure nisi voluptatum qui laudantium quasi ipsa. Sint excepturi illum adipisci reiciendis quidem.</p>
+                </div>
+                <hr>
+            </div>   
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-4 px-6 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="mb-3 mb-md-0 text-white">This site is made by Enes Kurt.</p>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-muted" href="https://github.com/Enes-Kurt" target="_blank">
+                        <img src="index-images/logo-github.png" class="bi" width="24" height="24"></img>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.linkedin.com/in/eneskurt/" target="_blank">
+                        <img src="index-images/logo-linkedin.png" class="bi" width="24" height="24"></img>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="https://www.instagram.com/enesskurtt96/" target="_blank">
+                        <img src="index-images/logo-instagram.png" class="bi" width="24" height="24"></img>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

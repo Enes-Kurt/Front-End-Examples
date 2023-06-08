@@ -1,0 +1,43 @@
+.bg-blue{
+    background-color: rgb(60, 72, 107);
+}
+.txt-blue{
+    color: rgb(60, 72, 107);
+}
+.bg-grey{
+    background-color: rgb(240, 240, 240);
+}
+.txt-grey{
+    color: rgb(240, 240, 240);
+}
+.bg-yellow{
+    background-color: rgb(249, 217, 73);
+}
+.txt-yellow{
+    color: rgb(249, 217, 73);
+}
+.bg-red{
+    background-color: rgb(244, 80, 80);
+}
+.txt-red{
+    color: rgb(244, 80, 80);
+}
+.pr-4{
+    padding-right: 4rem;
+}
+.transform-nav{
+    transition: transform 0.5s;
+}
+.transform-nav:hover {
+    
+    transform: scale(1.1) translate(0px, -4px);
+  }
+
+.char-transform{
+    transition: transform 0.5s;
+}
+
+.char-transform:hover{
+    color: rgb(249, 217, 73);
+    font-weight: bold;
+}
